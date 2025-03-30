@@ -3,7 +3,7 @@ layout: home
 ---
 # **Ryan Neil Parker**
 
-<img src="assets/headshot.jpeg" width=50% style="border-radius: 25%"> 
+<img src="assets/headshot.jpeg" style="border-radius: 25%; width: 50%;"> 
 ## **Yacht Deckhand | Engineer | Problem Solver**  
 
 Welcome aboard! I’m Ryan Neil Parker, a dedicated deckhand and aspiring yacht engineer with a sharp eye for detail, a strong technical background, and a commitment to getting things right the first time. I bring a unique combination of **hands-on yacht maintenance skills**, **engineering expertise**, and **a problem-solving mindset** that makes me an asset to any crew.  
