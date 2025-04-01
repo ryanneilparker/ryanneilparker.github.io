@@ -10,8 +10,9 @@ layout: default
             <h1>Ryan Neil Parker</h1>
             <p>Yacht Deckhand, Engineer, & Problem Solver</p>
             <div class="buttons">
-                <a href="#" class="btn btn-download">Download CV</a>
-                <a href="#" class="btn btn-contact">Contact Me</a>
+                <a href="/assets/ryan-neil-parker-cv.pdf" class="btn btn-download" download>Download CV</a>
+                <a href="mailto:ryanneilparker@gmail.com" class="btn btn-contact">Email Me</a>
+                <a href="tel:+19542261314" class="btn btn-contact">Call Me</a>
             </div>
         </div>
     </div>
@@ -53,8 +54,8 @@ layout: default
 	    margin-bottom: 2rem;
         }
         .profile-img {
-            width: 350px;
-            height: 350px;
+            max-width: 300px;
+            max-height: 300px;
             border-radius: 50%;
             object-fit: cover;
             margin-right: 20px;
@@ -81,6 +82,9 @@ layout: default
             margin-right: 10px;
             display: inline-block;
         }
+	.btn:visited {
+	    color: grey;
+	}
         .btn-download {
             background-color: white;
 	    border: 1px solid black;
@@ -93,4 +97,9 @@ layout: default
 	.btn-contact:hover {
 	    color: white;
 	}
+        @media (max-width: 768px) {
+	    .header {
+	        flex-direction: column;
+		    }
+        }
 </style>
