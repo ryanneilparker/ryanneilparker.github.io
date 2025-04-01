@@ -3,9 +3,18 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-   <!-- <h1 class="page-heading">{{ page.title }}</h1> -->
-  {%- endif -%}
+    <div class="header">
+        <img src="assets/headshot.jpeg" alt="Profile Picture of Ryan Neil Parker" class="profile-img">
+        <div class="text-container">
+	    <p>Hello, I'm</p>
+            <h1>Ryan Neil Parker</h1>
+            <p>Yacht Deckhand, Engineer, & Problem Solver</p>
+            <div class="buttons">
+                <a href="#" class="btn btn-download">Download CV</a>
+                <a href="#" class="btn btn-contact">Contact Me</a>
+            </div>
+        </div>
+    </div>
 
   {{ content }}
 
@@ -32,3 +41,56 @@ layout: default
   {%- endif -%}
 
 </div>
+
+<style>
+        .header {
+            display: flex;
+            align-items: center;
+            background: white;
+	    border: 1px solid #e8e8e8;
+            border-radius: 10px;
+	    padding: 20px;
+	    margin-bottom: 2rem;
+        }
+        .profile-img {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .text-container {
+            flex: 1;
+	    text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        .btn {
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .btn-download {
+            background-color: white;
+	    border: 1px solid black;
+	    color: black;
+        }
+        .btn-contact {
+            background-color: black;
+	    color: white;
+        }
+	.btn-contact:hover {
+	    color: white;
+	}
+</style>
